@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Timesheet App</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  </head>
+
+<body class="grey lighten-3">
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" target="_blank">
+          <strong class="blue-text">Timesheet App</strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="index.html">Project Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="roles.html" >Roles</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link waves-effect" href="team.html">Teams</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div class="sidebar-fixed position-fixed">
+
+     <a class="logo-wrapper waves-effect">
+        <img src="img/logo.png" class="img-fluid" alt="" style="max-height: 120px;">
+      </a>
+
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item active waves-effect">
+          <i class="fas fa-chart-pie mr-3"></i>Project Statistics
+        </a>
+        <a href="roles.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-user mr-3"></i>Employee Roles</a>
+		  <a href="team.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-user mr-3"></i>Teams</a>
+      </div>
+
+    </div>
+    <!-- Sidebar -->
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="pt-5 mx-lg-5">
+    <div class="container-fluid mt-5">
+	      <!-- project stats -->
+      <div class="row wow fadeIn">
+        <div class="col-lg-10 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-header">Project Statistics</div>
+            <div class="card-body">
+              <canvas id="lineChart"></canvas>
+            </div>
+          </div>
+        </div>
+       </div>
+		
+      <div class="row wow fadeIn">
+        <div class="col-md-10 mb-4">
+			<div class="card">
+            <div class="card-body">              
+              <table class="table table-sm table-hover">
+                <thead class="blue lighten-4">
+                  <tr>
+                    <th>Sl. No</th>
+                    <th>Activity</th>
+                    <th>Total Hrs</th>
+                    <th>Completed Hrs</th>
+					<th>Remaining Hrs</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Design Drawing Study Hours</td>
+                    <td>250</td>
+                    <td>488</td>
+					<td>-238</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Detailing Hours</td>
+                    <td>1499</td>
+                    <td>7346</td>
+					<td>-5847</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Checking Hours</td>
+                    <td>1000</td>
+                    <td>4094</td>
+					<td>-3094</td>
+                  </tr>
+				   <tr>
+                    <th scope="row">4</th>
+                    <td>Modeling Hours</td>
+                    <td>1649</td>
+                    <td>1785</td>
+					<td>-136</td>
+                  </tr>
+				  <tr>
+                    <th scope="row">5</th>
+                    <td>Model Checking Hours</td>
+                    <td>500</td>
+                    <td>3266</td>
+					<td>-2766</td>
+                  </tr>
+				 <tr>
+                  <th scope="row">6</th>
+                    <td>RFI Hours</td>
+                    <td>100</td>
+                    <td>546</td>
+					<td>-446</td>
+                  </tr>
+				 <tr>
+                  <th scope="row">7</th>
+                    <td>IFC Hours</td>
+                    <td>750</td>
+                    <td>0</td>
+					<td>750</td>
+                  </tr>
+				  <tr>
+                  <th scope="row">8</th>
+                    <td>Other Hours</td>
+                    <td>-</td>
+                    <td>315</td>
+					<td>-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+	 <div class="row wow fadeIn">       
+        <div class="col-md-6 mb-4">
+          <div class="card">          
+            <div class="card-body">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+        </div>
+		<div class="col-md-6 mb-4">
+          <div class="card">          
+            <div class="card-body">
+              <canvas id="myChart2"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+     
+      </div>
+    </div>	
+  </main>
+ 
+ 
+ 
+  <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+  </footer>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+
+  <!-- Charts -->
+  <script>
+    // Line
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ["Design", "Detailing", "Checking", "Modeling", "Model Check", "RFI", "IFC", "Other"],
+        datasets: [{
+          label: 'Completed Hours',
+          data: [488, 7346, 4094, 1785, 3266, 546, 750, 315],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255,99,132,1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+	var ctx = document.getElementById("myChart2").getContext('2d');
+    var myChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ["Design", "Detailing", "Checking", "Modeling", "Model Check", "RFI", "IFC", "Other"],
+        datasets: [{
+          label: 'Remaining Hours',
+          data: [-1238, -5382, -3099, -1136, -2766, -546, 750, 0],
+          backgroundColor: [
+            'rgba(255, 99, 132, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)'
+          ],
+          borderColor: [
+            'rgba(255,99,132,1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true
+            }
+          }]
+        }
+      }
+    });
+
+    //line
+    var ctxL = document.getElementById("lineChart").getContext('2d');
+    var myLineChart = new Chart(ctxL, {
+      type: 'line',
+      data: {
+        labels: ["Design", "Detailing", "Checking", "Modeling", "Model Check", "RFI", "IFC", "Other"],
+        datasets: [{
+            label: "Remaining Hours",
+            backgroundColor: [
+              'rgba(105, 0, 132, .2)',
+            ],
+            borderColor: [
+              'rgba(200, 99, 132, .7)',
+            ],
+            borderWidth: 2,
+            data: [-238, -5847, -3094, -136, -2766, -466, 750, 315]
+          },
+          {
+            label: "Completed Hours",
+            backgroundColor: [
+              'rgba(0, 137, 132, .2)',
+            ],
+            borderColor: [
+              'rgba(0, 10, 130, .7)',
+            ],
+            data: [488, 7346, 4094, 1785, 3266, 546, 750, 315]
+          }
+        ]
+      },
+      options: {
+        responsive: true
+      }
+    });
+
+
+    //radar
+    var ctxR = document.getElementById("radarChart").getContext('2d');
+    var myRadarChart = new Chart(ctxR, {
+      type: 'radar',
+      data: {
+        labels: ["Eating", "Drinking", "Sleeping", "Designing", "Coding", "Cycling", "Running"],
+        datasets: [{
+          label: "My First dataset",
+          data: [65, 59, 90, 81, 56, 55, 40],
+          backgroundColor: [
+            'rgba(105, 0, 132, .2)',
+          ],
+          borderColor: [
+            'rgba(200, 99, 132, .7)',
+          ],
+          borderWidth: 2
+        }, {
+          label: "My Second dataset",
+          data: [28, 48, 40, 19, 96, 27, 100],
+          backgroundColor: [
+            'rgba(0, 250, 220, .2)',
+          ],
+          borderColor: [
+            'rgba(0, 213, 132, .7)',
+          ],
+          borderWidth: 2
+        }]
+      },
+      options: {
+        responsive: true
+      }
+    });
+  </script>
+</body>
+
+</html>

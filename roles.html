@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Timesheet App</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
+  </head>
+
+<body class="grey lighten-3">
+
+  <!--Main Navigation-->
+  <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+      <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" target="_blank">
+          <strong class="blue-text">Timesheet App</strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <!-- Left -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="index.html">Project Statistics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link waves-effect" href="role.html" >Roles</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link waves-effect" href="team.html" >Teams</a>
+            </li>
+		  </ul>
+        </div>
+
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div class="sidebar-fixed position-fixed">
+
+      <a class="logo-wrapper waves-effect">
+        <img src="img/logo.png" class="img-fluid" style="max-height:120px;">
+      </a>
+
+      <div class="list-group list-group-flush">
+        <a href="index.html" class="list-group-item  waves-effect">
+          <i class="fas fa-chart-pie mr-3"></i>Project Statistics
+        </a>
+        <a href="roles.html" class="list-group-item active list-group-item-action waves-effect">
+          <i class="fas fa-user mr-3"></i>Employee Roles</a>
+		  
+		  <a href="team.html" class="list-group-item list-group-item-action waves-effect">
+          <i class="fas fa-user mr-3"></i>Teams</a>
+      </div>
+
+    </div>
+    <!-- Sidebar -->
+
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="pt-5 mx-lg-5">
+    <div class="container-fluid mt-5">
+	      <!-- project stats -->
+		
+		<div class="row row fadeIn">
+			<div class="col-md-12 mb4">
+				<!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-primary">Location</button>
+  <button type="button" class="btn btn-primary dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Bangalore</a>
+    <a class="dropdown-item" href="#">Delhi</a>
+    <a class="dropdown-item" href="#">US</a>
+  </div>
+</div>
+
+<!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-warning">Reporting To</button>
+  <button type="button" class="btn btn-warning dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Sunil</a>
+    <a class="dropdown-item" href="#">Ram</a>
+  </div>
+</div>
+
+<!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-success">Team</button>
+  <button type="button" class="btn btn-success dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Alpha</a>
+    <a class="dropdown-item" href="#">Beta</a>
+  </div>
+</div>
+
+<!-- Split button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary">Role</button>
+  <button type="button" class="btn btn-secondary dropdown-toggle px-3" data-toggle="dropdown" aria-haspopup="true"
+    aria-expanded="false">
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Manager</a>
+    <a class="dropdown-item" href="#">Consultant</a>
+  </div>
+</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		
+      <div class="row wow fadeIn">
+        <div class="col-md-12 mb-4">
+			<div class="card">
+			 <div class="card-header">Employee Roles</div>
+            <div class="card-body">              
+              <table class="table table-sm table-hover">
+                <thead class="blue lighten-4">
+                  <tr>
+                    <th>Sl. No</th>
+                    <th>Emp ID</th>
+                    <th>Emp Name</th>
+                    <th>Designation</th>
+					<th>Primary Role</th>
+					<th>WH</th>
+                    <th>Secondary Role</th>
+                    <th>WH</th>
+                    <th>Team</th>
+					<th>FTE</th>
+					<th>Target/FTE Value</th>
+					<th>Shift</th>
+					<th>
+					</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>466</td>
+                    <td>Ram</td>
+                    <td>Project Manager</td>
+					<td>Checker</td>
+					<td>6</td>
+					<td>Checker</td>
+					<td>6</td>
+					<td>Alpha</td>
+					<td>
+						<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="defaultUnchecked">
+						<label class="custom-control-label" for="defaultUnchecked"></label>
+						</div>
+					</td>
+					<td>4499.00</td>
+					<td>General</td>
+					<td><a href="#">Edit</a>
+                  </tr>
+                 <tr>
+                    <th scope="row">1</th>
+                    <td>1488</td>
+                    <td>Sam</td>
+                    <td>Engineering Checker</td>
+					<td>Checker</td>
+					<td>2</td>
+					<td>Checker</td>
+					<td>2</td>
+					<td>Alpha</td>
+					<td>
+						<div class="custom-control custom-checkbox">
+						<input type="checkbox" class="custom-control-input" id="defaultUnchecked1">
+						<label class="custom-control-label" for="defaultUnchecked1"></label>
+						</div>
+					</td>
+					</td>
+					<td>1906.00</td>
+					<td>General</td>
+					<td><a href="#">Edit</a>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>  
+	  
+	  <div class="row wow fadeIn">       
+        <div class="col-md-9 mb-4">
+          <div class="card">          
+            <div class="card-body">
+              <canvas id="pieChart"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+      </div>
+    </div>	
+  </main>
+ 
+ 
+ 
+  <footer class="page-footer text-center font-small primary-color-dark darken-2 mt-4 wow fadeIn">
+  </footer>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript">
+    // Animations initialization
+    new WOW().init();
+
+  </script>
+    <script>
+    //pie
+var ctxP = document.getElementById("pieChart").getContext('2d');
+var myPieChart = new Chart(ctxP, {
+type: 'pie',
+data: {
+labels: ["Locations", "Managers", "Teams", "Roles"],
+datasets: [{
+data: [10, 50, 55, 12],
+backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+}]
+},
+options: {
+responsive: true
+}
+});
+  </script>
+</body>
+</html>
